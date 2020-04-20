@@ -15,6 +15,7 @@
         <sidebar-link to="/notifications" name="Notifications" icon="ti-bell"/>
       </template>
       <mobile-menu>
+      <!--
         <li class="nav-item">
           <a class="nav-link">
             <i class="ti-panel"></i>
@@ -37,7 +38,7 @@
             <p>Settings</p>
           </a>
         </li>
-        <li class="divider"></li>
+        <li class="divider"></li>-->
       </mobile-menu>
     </side-bar>
     <div class="main-panel">

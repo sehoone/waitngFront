@@ -1,12 +1,13 @@
 <template>
-  <card title="Notifications" sub-title="Custom Vue notifications plugin">
+  <card title="Notifications" sub-title="공지사항">
     <div>
       <div class="row">
         <div class="col-md-6">
-          <h5>Notifications Style</h5>
+          <h5>Notifications</h5>
           <div class="alert alert-info">
-            <span>This is a plain notification</span>
+            <span>거상 대기열 정보 사이트 입니다</span>
           </div>
+          <!--
           <div class="alert alert-info">
             <button type="button" aria-hidden="true" class="close">×</button>
             <span>This is a notification with close button.</span>
@@ -20,10 +21,11 @@
             <button type="button" aria-hidden="true" class="close">×</button>
             <span data-notify="icon" class="ti-pie-chart"></span>
             <span data-notify="message">This is a notification with close button and icon and have many lines. You can see that the icon and the close button are always vertically aligned. This is a beautiful notification. So you don't have to worry about the style.</span>
-          </div>
+          </div>-->
         </div>
         <div class="col-md-6">
           <h5>Notification states</h5>
+          <!--
           <div class="alert alert-info">
             <button type="button" aria-hidden="true" class="close">×</button>
             <span>
@@ -43,13 +45,13 @@
             <button type="button" aria-hidden="true" class="close">×</button>
             <span>
               <b> Danger - </b> This is a regular notification made with ".alert-danger"</span>
-          </div>
+          </div>-->
         </div>
       </div>
 
       <br>
       <br>
-
+<!--
       <div class="places-buttons">
         <div class="row d-flex justify-content-center">
           <div>
@@ -81,7 +83,7 @@
           </div>
 
         </div>
-      </div>
+      </div>-->
     </div>
   </card>
 </template>

@@ -11,6 +11,7 @@
         <span class="navbar-toggler-bar"></span>
         <span class="navbar-toggler-bar"></span>
       </button>
+      <!--
       <div class="collapse navbar-collapse">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
@@ -38,7 +39,7 @@
             </a>
           </li>
         </ul>
-      </div>
+      </div>-->
     </div></nav>
 </template>
 <script>
