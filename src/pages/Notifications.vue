@@ -5,7 +5,7 @@
         <div class="col-md-6">
           <h5>Notifications</h5>
           <div class="alert alert-info">
-            <span>거상 대기열 정보 사이트 입니다</span>
+            <b><span>거상 대기열 정보 사이트 입니다</span></b>
           </div>
           <!--
           <div class="alert alert-info">
@@ -25,12 +25,12 @@
         </div>
         <div class="col-md-6">
           <h5>Notification states</h5>
-          <!--
+          
           <div class="alert alert-info">
-            <button type="button" aria-hidden="true" class="close">×</button>
+            
             <span>
-              <b> Info - </b> This is a regular notification made with ".alert-info"</span>
-          </div>
+              <b> Info - </b> 버그문의 (meras@naver.com)</span>
+          </div><!--
           <div class="alert alert-success">
             <button type="button" aria-hidden="true" class="close">×</button>
             <span>

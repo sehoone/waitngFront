@@ -19,12 +19,12 @@ const routes = [
     children: [
       {
         path: "notifications",
-        name: "notifications",
+        name: "공지사항",
         component: Notifications
       },
       {
         path: "table-list",
-        name: "table-list",
+        name: "거상 대기열 정보",
         component: TableList
       }
     ]

@@ -11,8 +11,8 @@
         <sidebar-link to="/maps" name="Map" icon="ti-map"/>
         <sidebar-link to="/notifications" name="Notifications" icon="ti-bell"/>
         -->
-        <sidebar-link to="/table-list" name="Table List" icon="ti-view-list-alt"/>
-        <sidebar-link to="/notifications" name="Notifications" icon="ti-bell"/>
+        <sidebar-link to="/table-list" name="거상 대기열 정보" icon="ti-view-list-alt"/>
+        <sidebar-link to="/notifications" name="공지사항" icon="ti-bell"/>
       </template>
       <mobile-menu>
       <!--

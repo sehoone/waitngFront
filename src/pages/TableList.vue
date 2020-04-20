@@ -76,7 +76,7 @@ export default {
   data() {
     return {
       table1: {
-        title: "거상 대기열 정보",
+        title: "서버별 대기열 정보",
         subTitle: "1시간 마다 업데이트",
         columns: [...tableColumns],
         columnNames: [...columnNames],
