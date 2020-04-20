@@ -27,7 +27,7 @@
 <script>
 import api from "./backend-api";
 import { PaperTable } from "@/components";
-const tableColumns = ["seq", "server_name", "wait_cnt", "create_date"];
+const tableColumns = ["bot_info_seq", "server_name", "wait_cnt", "create_date"];
 const columnNames = ["Id", "서버명", "대기수", "마지막업데이트"];
 /*
 const columnNames = {
