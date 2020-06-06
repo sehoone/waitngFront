@@ -1,9 +1,9 @@
 <template>
     <div class="row">
       <div class="col-12">
-        <card :title="table1.title" :subTitle="table1.subTitle">
+        <card :title="table.title" :subTitle="table.subTitle">
           <div slot="raw-content" class="table-responsive">
-            <paper-table :data="table1.data" :columns="table1.columns" :columnNames="table1.columnNames">
+            <paper-table :data="table.data" :columns="table.columns" :columnNames="table.columnNames">
 
             </paper-table>
           </div>
@@ -27,7 +27,7 @@
 <script>
 import api from "./backend-api";
 import { PaperTable } from "@/components";
-const tableColumns = ["bot_info_seq", "server_name", "wait_cnt", "create_date"];
+const tableColumns = ["botDetailSeq", "serverName", "waitCnt", "bot_info_seq"];
 const columnNames = ["Id", "서버명", "대기수", "마지막업데이트"];
 /*
 const columnNames = {
@@ -69,13 +69,28 @@ const tableData = [
   }
 ];
 
+const tableData2 = [
+  {
+    botDetailSeq: 1,
+    server_name: "주작",
+    wait_cnt: "323",
+    create_date: "2020.04.10 13:00"
+  },
+  {
+    botDetailSeq: 2,
+    server_name: "ㄷㄷ",
+    wait_cnt: "323",
+    create_date: "2020.04.10 13:00"
+  }
+];
+
 export default {
   components: {
     PaperTable
   },
   data() {
     return {
-      table1: {
+      table: {
         title: "서버별 대기열 정보",
         subTitle: "1시간 마다 업데이트",
         columns: [...tableColumns],
@@ -91,12 +106,17 @@ export default {
       // Fetches posts when the component is created.
     waitCntList () {
         api.waitCntList().then(response => {
-            this.table1.data = response.data;
-            console.log(response.data)
-            return response.data;
+          console.log(response.data);
+          //console.log(this.table1.data);
+          //this.table.data = response.data.botDetails;
+          //console.log('aa '+response.data.botDetails);
+          this.table.data = response.data.botDetails;
+          //console.log(response.data.botDetails);  
+          
+          return response.data;
         })
         .catch(error => {
-          this.errors.push(error)
+          //this.errors.push(error)
         })
     }
   }

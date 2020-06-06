@@ -45,13 +45,17 @@ export default {
   },
   methods: {
     hasValue(item, column) {
-      return item[column.toLowerCase()] !== "undefined";
+      console.log('hasValue' + item[column.toLowerCase()]);
+      //return item[column.toLowerCase()] !== "undefined";
+      return item[column] !== "undefined";
     },
     itemValue(item, column) {
-      var val = item[column.toLowerCase()];
-      if(val.length == 0) {
-        val = "-";
-      }
+      console.log('itemValue' + item[column.toLowerCase()]);
+      //var val = item[column.toLowerCase()];
+      var val = item[column];
+      //if(val.length == 0) {
+      //  val = "-";
+      //}
       return val;
     }
   }
